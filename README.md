@@ -10,25 +10,25 @@ The goal of this lab is to create detection logic, convert it into Splunk SPL se
 
 ## Environment
 
-| Component  | Details                                             |
-| ---------- | --------------------------------------------------- |
-| SIEM       | Splunk Enterprise 10.4                              |
-| Endpoint   | Windows 11                                          |
-| Telemetry  | Sysmon                                              |
-| Log Source | Microsoft-Windows-Sysmon/Operational                |
+| Component | Details |
+|----------|---------|
+| SIEM | Splunk Enterprise 10.4 |
+| Endpoint | Windows 11 |
+| Telemetry | Sysmon |
+| Log Source | Microsoft-Windows-Sysmon/Operational |
 | Sourcetype | XmlWinEventLog:Microsoft-Windows-Sysmon/Operational |
 
 ---
 
 ## Detection Coverage
 
-| Detection                | MITRE ATT&CK | Status    |
-| ------------------------ | ------------ | --------- |
-| PowerShell Execution     | T1059.001    | Completed |
-| Command Prompt Execution | T1059.003    | Completed |
-| Account Discovery        | T1087        | Completed |
-| Network Connections      | T1049        | Completed |
-| File Creation Activity   | T1105        | Completed |
+| Detection | MITRE ATT&CK | Status |
+|----------|--------------|--------|
+| PowerShell Execution | T1059.001 | Completed |
+| Command Prompt Execution | T1059.003 | Completed |
+| Account Discovery | T1087 | Completed |
+| Network Connections | T1049 | Completed |
+| File Creation Activity | T1105 | Completed |
 
 ---
 
