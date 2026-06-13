@@ -241,6 +241,27 @@ File creation activity was detected using Sysmon telemetry.
 ![File Creation](screenshots/t1105_file_creation.png)
 
 ---
+## Hunt 5 - File Creation Activity
+
+### Objective
+
+Identify file creation events using Sysmon Event ID 11.
+
+### Splunk Query
+
+```spl
+index=* sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
+| search "<EventID>11</EventID>"
+
+MITRE ATT&CK
+
+T1105 - Ingress Tool Transfer
+
+Findings
+
+Sysmon Event ID 11 captured file creation activity on the monitored endpoint.
+
+---
 
 ## Skills Demonstrated
 
